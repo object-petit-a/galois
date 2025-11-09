@@ -1,6 +1,6 @@
 # Galois
 
-A Layer 1 blockchain with deterministic execution through Nix-based reproducible builds and pure functional smart contracts.
+Byzantine consensus through reproducibility: one execution path, multiple verification proofs.
 
 ## Motivation
 
@@ -71,8 +71,8 @@ transfer(from: Address, to: Address, amount: u64) → Result<State, Error>
 
 - **Staking**: Minimal stake required for validator participation (Sybil prevention)
 - **Rewards**: Block proposers receive transaction fees; all validators in quorum receive inflationary rewards
-- **Verification diversity bonus**: Validators using statistically underrepresented proof methods receive 20% bonus
-- **Slashing**: 5% stake for invalid reproduction, 10% for provably malicious block proposal
+- **Verification diversity bonus**: Validators using statistically underrepresented proof methods receive additional rewards
+- **Slashing**: Stake penalties for invalid reproduction or provably malicious block proposals
 
 ## Data Availability
 
@@ -100,11 +100,10 @@ Full synchronization uses incremental snapshots: light client downloads latest s
 | DA guarantees | On-chain | External (e.g., Celestia) | Native via reproducibility |
 | State verification | Full execution | Varies | Merkle proofs + reproduction |
 
-## Implementation Status
+## Project Status
 
-Galois is under active development. Core components include validator software in Nix, functional contract runtime, and consensus protocol specification.
+Galois is in conceptual design phase. Architecture and consensus mechanisms are under theoretical development.
 
 ---
 
 *Galois: Named after Évariste Galois, whose work on group theory and field equations established foundations for deterministic mathematical structures.*
-
