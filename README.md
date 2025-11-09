@@ -1,4 +1,3 @@
-```markdown
 # Galois
 
 A Layer 1 blockchain with deterministic execution through Nix-based reproducible builds and pure functional smart contracts.
@@ -108,4 +107,4 @@ Galois is under active development. Core components include validator software i
 ---
 
 *Galois: Named after Évariste Galois, whose work on group theory and field equations established foundations for deterministic mathematical structures.*
-```
+
